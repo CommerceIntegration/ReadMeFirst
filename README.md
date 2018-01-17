@@ -18,12 +18,15 @@ Comprehensive Microsoft Azure Techstack:
 * Azure Bot Service - bots to interact naturally with our users on websites, apps, cognitive services (Cortana/Azure Cognitive Services), Skype, Slack, Facebook Messenger, and more.
 * Azure Cognitive Services - so we can leverage and utilize the power of machine learning for vision, speech, knowledge, search and language needs. Also we can utilize the Computer Vision API to bring the power of machine learning to our apps for making them better over time. For example, if we want a feature that could identify images using our own custom classifiers (for example, identifying images of "Daisies", "Daffodils", and "Dahlias").
 * Azure DDoS Protection - Protection for our Azure resources from denial of service threats
+* Azure Content Delivery Network - put appropriate data on edge servers
 
-Goals
+What are we building?  Solutions that provide the following services:
 
 	1. Configure and manage Azure infrastructure (Infrastructure as code using Resource Manager templates) -  see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest
 	
-	setup new accounts, choose desired features, enter new information, generate new GitHub account repository and create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
+	setup new accounts, choose desired features, enter new provisioning information, generate new GitHub account repository and create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
+	
+	create and configure necessary DNS entries and deploy SSL certificates
 	
 	spin up and tear down entire Azure resource sets based on dynamically created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
 		
@@ -38,6 +41,8 @@ Goals
 		provision and pre-load any required data into data stores
 	
 		load data from file resources or data transfers from any prescribed data stores
+		
+		create and configure CDNs as prescribed (ie: CloudFlare, AWS CloudFront, Azure Content Delivery Network)
 		
 	2.  End user deliverable software tools and services for prescribed environments (ie storefront, inventory, personnel, products, etc.)	
 	
