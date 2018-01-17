@@ -14,4 +14,6 @@ Comprehensive Microsoft Azure Techstack:
 * Azure Storage queues - these feature a simple REST-based GET/PUT/PEEK interface, providing reliable, persistent messaging within and between services. These can act as triggers for Azure Functions.  See: https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted
 * Azure Functions/Durable Functions - These will serve as our primary microservices and endpoints.
 * Azure Bot Service - bots to interact naturally with our users on websites, apps, cognitive services (Cortana/Azure Cognitive Services), Skype, Slack, Facebook Messenger, and more.
-* Azure Cognitive Services - so we can leverage and utilize the power of machine learning for vision, speech, knowledge, search and language needs.
+* Azure Cognitive Services - so we can leverage and utilize the power of machine learning for vision, speech, knowledge, search and language needs. Also we can utilize Computer Vision API to bring the power of machine learning to our apps for making them better over time. For example, if we want a feature that could identify images using our own custom classifiers (for example, identifying images of "Daisies", "Daffodils", and "Dahlias").
+* Azure DDoS Protection - Protection for our Azure resources from denial of service threats
+
