@@ -39,6 +39,9 @@ Goals
 		load data from file resources or data transfers from any prescribed data stores
 		
 	2.  End user deliverable software tools and services for prescribed environments (ie storefront, inventory, personnel, products, etc.)	
-		
+	
+* use API Platform https://api-platform.com/	- ensures that SEO is done correctly for search engines
+* use GatsbyJS https://www.gatsbyjs.org/ - for front facing consumer web apps to have extremely performant UX that is blazening fast. 
+
 Audit Inventory of Azure Resources:
 * To make it easier to assess the environment and gain a quick understanding of the landscape across all subscriptions we can export the data so we use it in Excel. There a few quick scripts to collect data across different resource types. The data for all collections includes the resource name, location, resource group and subscription, with each script for the specific resource type having more detailed information for that type of resource.  Please make sure you are using AzureRM PowerShell 4.3.1. You can find all the scripts here https://github.com/Merlus/powershell/tree/master/azure/Audit%20Resources.
