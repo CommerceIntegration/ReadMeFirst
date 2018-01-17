@@ -18,3 +18,25 @@ Comprehensive Microsoft Azure Techstack:
 * Azure Cognitive Services - so we can leverage and utilize the power of machine learning for vision, speech, knowledge, search and language needs. Also we can utilize the Computer Vision API to bring the power of machine learning to our apps for making them better over time. For example, if we want a feature that could identify images using our own custom classifiers (for example, identifying images of "Daisies", "Daffodils", and "Dahlias").
 * Azure DDoS Protection - Protection for our Azure resources from denial of service threats
 
+Goals
+
+	1. Configure and manage Azure infrastructure (Infrastructure as code using Resource Manager templates) -  see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest
+	
+	setup new accounts, choose desired features, enter new information, generate new GitHub account repository and create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
+	
+	spin up and tear down entire Azure resource sets based on dynamically created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
+		
+	auto-wire up CI/CD deployments for each GitHub repo to prescribed Azure services
+	
+	auto-build an MVC management (per Azure subscription) "front-end Azure management" app specifically for prescribed Azure environment
+	Features will include:
+		dynamically create/script azure functions code for GitHub repo and via CD subsequently to Azure
+	
+		deploy MVC management app to Azure prescribed subscription web app
+		
+		provision and pre-load any required data into data stores
+	
+		load data from file resources or data transfers from any prescribed data stores
+		
+	2.  End user deliverable software tools and services for prescribed environments (ie storefront, inventory, personnel, products, etc.)	
+		
