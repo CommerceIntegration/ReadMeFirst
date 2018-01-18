@@ -20,7 +20,7 @@ This is a comprehensive Microsoft Azure tech stack:
 * Azure DDoS Protection - yields protection for our Azure resources from denial of service threats
 * Azure Content Delivery Network - scales out appropriate data on localized edge servers
 
-What are we building?  Heres a broad overview of the solutions and services:
+What are we building?  Here's a broad overview of the proposed solutions and their constituant services:
 
 	1. Configure and manage Azure infrastructure (Infrastructure as code using Resource Manager templates) -  see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest
 	
