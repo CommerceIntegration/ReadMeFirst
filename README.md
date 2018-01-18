@@ -24,30 +24,40 @@ What are we building?  Here's a broad overview of the proposed solutions and the
 
 	1. Configure and manage Azure infrastructure (Infrastructure as code using Resource Manager templates) -  see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest
 	
-	setup new accounts, choose desired features, enter new provisioning information, generate new GitHub account repository and create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
+	** setup new accounts
+	** choose desired features
+	** enter provisioning information
+	** generate new GitHub account repository
+	** create any necessary email (SMTP and Pop3) accounts
+	** create any necessary Twilio configurations
+	** create payment gateway acounts (BrainTree, Stripe, etc) and setup any necessary webhooks
+	** create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
 	
-	create and configure necessary DNS entries and deploy SSL certificates
+	** spin up and tear down entire Azure resource sets based on dynamically created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
+			
+	** create and configure necessary DNS entries and deploy SSL certificates
 	
-	spin up and tear down entire Azure resource sets based on dynamically created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
-		
-	auto-wire up CI/CD deployments for each GitHub repo to prescribed Azure services
+	** auto-wire up CI/CD deployments for each GitHub repo to prescribed Azure services
 	
-	auto-build an MVC management (per Azure subscription) "front-end Azure management" app specifically for prescribed Azure environment
+	** auto-build an MVC management (per Azure subscription) "front-end Azure management" app specifically for prescribed Azure environment
 	Features will include:
-		dynamically create/script azure functions code for GitHub repo and via CD subsequently to Azure
+		*** dynamically create/script azure functions code for GitHub repo and via CD subsequently to Azure
 	
-		deploy MVC management app to Azure prescribed subscription web app
+		*** deploy MVC management app to Azure prescribed subscription web app
 		
-		provision and pre-load any required data into data stores
+		*** provision and pre-load any required data into data stores
 	
-		load data from file resources or data transfers from any prescribed data stores
+		*** load data from file resources or data transfers from any prescribed data stores
 		
-		create and configure CDNs as prescribed (ie: CloudFlare, AWS CloudFront, Azure Content Delivery Network)
+		*** create and configure CDNs as prescribed (ie: CloudFlare, AWS CloudFront, Azure Content Delivery Network)
 		
 	2.  End user deliverable software tools and services for prescribed environments (ie storefront, inventory, personnel, products, etc.)	
 	
 * use API Platform https://api-platform.com/	- ensures that SEO is done correctly for search engines
 * use GatsbyJS https://www.gatsbyjs.org/ - for front facing consumer web apps to have extremely performant UX that is blazening fast. 
 
-Audit Inventory of Azure Resources:
-* To make it easier to assess the environment and gain a quick understanding of the landscape across all subscriptions we can export the data so we use it in Excel. There a few quick scripts to collect data across different resource types. The data for all collections includes the resource name, location, resource group and subscription, with each script for the specific resource type having more detailed information for that type of resource.  Please make sure you are using AzureRM PowerShell 4.3.1. You can find all the scripts here https://github.com/Merlus/powershell/tree/master/azure/Audit%20Resources.
+Things to consider:
+Azure cost money so we need to be able to track the details of whom and what are consuming the resources that are paid for.  For this we need tools that can report and audit all resources and sort the details by account.
+
+	Audit Inventory of Azure Resources:
+	* To make it easier to assess the environment and gain a quick understanding of the landscape across all subscriptions we can export the data so we use it in Excel. There a few quick scripts to collect data across different resource types. The data for all collections includes the resource name, location, resource group and subscription, with each script for the specific resource type having more detailed information for that type of resource.  Please make sure you are using AzureRM PowerShell 4.3.1. You can find all the scripts here https://github.com/Merlus/powershell/tree/master/azure/Audit%20Resources.
