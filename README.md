@@ -36,8 +36,6 @@ A set of tools or apps that configure and manage an Azure infrastructure (Infras
 * create payment gateway acounts (BrainTree, Stripe, etc) and setup any necessary webhooks
 * create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
 
-Luckly someone has done this before and has provided an example - see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest
-
 ### Deliverable Core Building Blocks-- we need to be able to:
 * spin up and tear down entire Azure resource groups based on dynamically-created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
 			
@@ -55,12 +53,14 @@ Luckly someone has done this before and has provided an example - see: https://m
 	* load data from file resources or data transfers from any prescribed data stores
 		
 	* create and configure CDNs as prescribed (ie: CloudFlare, AWS CloudFront, Azure Content Delivery Network)
-		
-##  End user deliverable software tools and services for prescribed environments (ie storefront, inventory, personnel, products, etc.)	
 
-Performance and discoverability of the web solutions is critical.  To ensure the absolute best speed and SEO abilities of the visible consumer front end solutions, we will utilize the following cutting edge platforms:
-* API Platform https://api-platform.com/	- ensures that SEO is done correctly for search engines
-* GatsbyJS https://www.gatsbyjs.org/ - for front facing consumer web apps to have extremely performant UX that is blazening fast. 
+Luckly someone has done this before and has provided an example - see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest	
+		
+##  End User Deliverable Tools and Services (for prescribed environments including: storefront, inventory, personnel, products, etc.)	
+
+* Performance and discoverability of the web solutions is critical.  To ensure the absolute best speed and SEO abilities of the visible consumer front end solutions, we will utilize the following cutting edge platforms:
+	* API Platform https://api-platform.com/	- ensures that SEO is done correctly for search engines
+	* GatsbyJS https://www.gatsbyjs.org/ - for front facing consumer web apps to have extremely performant UX that is blazening fast. 
 
 ## Things to consider:
 Azure cost money so we need to be able to track the details of whom and what are consuming the resources that are paid for.  For this we need tools that can report and audit all resources and sort the details by account.
