@@ -1,26 +1,26 @@
 # Read Me First
-Overview and set of usage guidelines stating the purposes of each Commerce Integration module/micro-service and how to use them to build out your desired inter-connected solutions.
+Hello there and welcome.  If your reading this, hopefully your interest is picqued... and if you'll just hang in there a bit, hopefully you'll figure out what were trying to accomplish here.  This set of repositories contain usuable code.  There are links to detailed guidelines and purposes of each Commerce Integration module/micro-service (look for the links in the description area of each repo).   Help in building this solution is welcomed.
 
-Comprehensive Microsoft Azure Techstack: 
-* Asp.Net MVC/.Net Core - All management applications will be written in C# and will be deployed to run as Azure WebApps.
+This is a comprehensive Microsoft Azure tech stack: 
+* Asp.Net MVC/.Net Core - all management applications will be written in C# and will be deployed to run as Azure WebApps.
 * Azure Active Directory B2C - multitenant active directory with MFA and numerous authentication support including OAuth which we will standardize on.  Additionally Azure AD B2C supports custom extensions for claims of any type to be included.  The Azure AD B2C will serve to authenticate as well as authorize access to specific features of the Management Apps as well as the Azure services, including the Azure Functions.
-* Azure Key Vault and Azure Managed Service Identity (MSI) - avoids storing passwords in our code to authenticate to services that support Azure Active Directory (AAD) authentication, including Key Vault.  See: https://4sysops.com/archives/use-azure-managed-service-identity-msi-to-store-passwords-in-your-code-securely/ and https://blogs.technet.microsoft.com/paulomarques/2016/05/27/safeguarding-your-passwords-when-deploying-azure-virtual-machines-with-azure-powershell-module-and-arm-templates-by-using-azure-key-vault/
-* Azure CosmosDB - for when we want to work with unstructured non schema'd data.  Can be used just like MongoDB (same commands and syntax), as well as a graph database.  Works perfect for faceted navigation in Azure Search!
+* Azure Key Vault and Azure Managed Service Identity (MSI) - these services help us avoid storing passwords in our code to authenticate to services that support Azure Active Directory (AAD) authentication, including Key Vault.  See: https://4sysops.com/archives/use-azure-managed-service-identity-msi-to-store-passwords-in-your-code-securely/ and https://blogs.technet.microsoft.com/paulomarques/2016/05/27/safeguarding-your-passwords-when-deploying-azure-virtual-machines-with-azure-powershell-module-and-arm-templates-by-using-azure-key-vault/
+* Azure CosmosDB - for when we want to work with unstructured non schema'd data.  CosmosDB an be used as a swapped in variant of MongoDB (same commands and syntax), as well as a graph database (akin to Neo4J) using the Gremlin query language.  CosmosDB shines for faceted navigation as an indexed datastore in Azure Search!
 * Azure Redis Cache - for extremely performant data caching
 * Azure SQL - when we want to work with structured data using relations, indexes, constraints, etc.
-* Azure Table Storage - Azure storage table is great when we need to work with centralized structured data without relations and usually with large volumes... for example, when we store large volumes of data, storage table is a lot cheaper... think of logging for example.
+* Azure Table Storage - Azure Table Storage  is great when we need to work with centralized structured data without relations and usually with large volumes... for example, when we store large volumes of data, storage table is a lot cheaper... think of logging for example.
 * Azure Search - able to comprehensively search all used databases (Cosmos, Table and SQL) as well as blob files stored in Azure Storage.  Azure Search's capabilities are impressive in that multiple datastores and files can be amalgamated and searched simultaneously to yeild a single result query.
 * Azure Service Bus - This will serve as the primary inter-service messaging queue
-* Azure Storage - This will serve as blob (file) storage. Not only will Azure Storage serve as a repository for binary files (such as images, documents, etc.), but will also serve as JSON file stores for loading data, setting up accounts and provisioning users and preferences.  Such JSON files will be used as input using triggers to call specified Azure Functions upon file creation and update.
+* Azure Storage - This will serve as blob (file) storage. Not only will Azure Storage serve as a repository for binary files (such as images, documents, etc.), but will also serve as JSON file stores for loading data, setting up accounts and such... and provisioning users and preferences.  JSON files will be used as input using triggers to call specified Azure Functions upon file creation and update.
 * Azure Service Bus queues - are part of a broader Azure messaging infrastructure that supports queuing as well as publish/subscribe, and more advanced integration patterns.
-* Azure Storage queues - these feature a simple REST-based GET/PUT/PEEK interface, providing reliable, persistent messaging within and between services. These can act as triggers for Azure Functions.  See: https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted
-* Azure Functions/Durable Functions - These will serve as our primary microservices and endpoints.
+* Azure Storage queues - feature a simple REST-based GET/PUT/PEEK interface, providing reliable, persistent messaging within and between services. These can act as triggers for Azure Functions.  See: https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted
+* Azure Functions/Durable Functions - will serve as our primary microservices and endpoints.
 * Azure Bot Service - bots to interact naturally with our users on websites, apps, cognitive services (Cortana/Azure Cognitive Services), Skype, Slack, Facebook Messenger, and more.
-* Azure Cognitive Services - so we can leverage and utilize the power of machine learning for vision, speech, knowledge, search and language needs. Also we can utilize the Computer Vision API to bring the power of machine learning to our apps for making them better over time. For example, if we want a feature that could identify images using our own custom classifiers (for example, identifying images of "Daisies", "Daffodils", and "Dahlias").
-* Azure DDoS Protection - Protection for our Azure resources from denial of service threats
-* Azure Content Delivery Network - put appropriate data on edge servers
+* Azure Cognitive Services - can leverage and utilize the power of machine learning for vision, speech, knowledge, search and language needs. Also we can utilize the Computer Vision API to bring the power of machine learning to our apps for making them better over time. For example, if we want a feature that could identify images using our own custom classifiers (for example, identifying images of "Daisies", "Daffodils", and "Dahlias").
+* Azure DDoS Protection - yields protection for our Azure resources from denial of service threats
+* Azure Content Delivery Network - scales out appropriate data on localized edge servers
 
-What are we building?  Solutions that provide the following services:
+What are we building?  Heres a broad overview of the solutions and services:
 
 	1. Configure and manage Azure infrastructure (Infrastructure as code using Resource Manager templates) -  see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest
 	
