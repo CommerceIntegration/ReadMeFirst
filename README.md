@@ -1,7 +1,7 @@
 # Read Me First
 Hello there and welcome.  If your reading this, hopefully your interest is picqued... and if you'll just hang in there a bit, hopefully you'll figure out what were trying to accomplish here.  This set of repositories contain usuable code.  There are links to detailed guidelines and purposes of each Commerce Integration module/micro-service (look for the links in the description area of each repo).   Help in building this solution is welcomed.
 
-This is a comprehensive Microsoft Azure tech stack: 
+Microsoft Azure Specific solution here!  This is a comprehensive Microsoft Azure-based tech stack: 
 * Asp.Net MVC/.Net Core - all management applications will be written in C# and will be deployed to run as Azure WebApps.
 * Azure Active Directory B2C - multitenant active directory with MFA and numerous authentication support including OAuth which we will standardize on.  Additionally Azure AD B2C supports custom extensions for claims of any type to be included.  The Azure AD B2C will serve to authenticate as well as authorize access to specific features of the Management Apps as well as the Azure services, including the Azure Functions.
 * Azure Key Vault and Azure Managed Service Identity (MSI) - these services help us avoid storing passwords in our code to authenticate to services that support Azure Active Directory (AAD) authentication, including Key Vault.  See: https://4sysops.com/archives/use-azure-managed-service-identity-msi-to-store-passwords-in-your-code-securely/ and https://blogs.technet.microsoft.com/paulomarques/2016/05/27/safeguarding-your-passwords-when-deploying-azure-virtual-machines-with-azure-powershell-module-and-arm-templates-by-using-azure-key-vault/
