@@ -20,9 +20,10 @@ Microsoft Azure-centric solution here!  This is a comprehensive Microsoft Azure-
 * **Azure DDoS Protection** - yields protection for our Azure resources from denial of service threats
 * **Azure Content Delivery Network** - scales out appropriate data on localized edge servers
 
-What are we building?  There are really two separate environments that need to be developed:  A backend infrastucture tool-set and a deliverable (runnable) solution (that will be deployed to Azure) to provide end-user codebases for running customized integrated solutions.
+# **What are we building?**  
+There are really two separate environments that need to be developed:  A backend infrastucture tool-set and a deliverable (runnable) solution (that will be deployed to Azure) to provide end-user codebases for running customized integrated solutions.
 
-Here's a broad overview of the proposed solutions and their constituant services:
+## Here's a broad overview of the proposed solutions and their constituant services:
 
 ### Backend Infrastructure
 A set of tools or apps that _configure and manage_ an Azure infrastructure (Infrastructure as code using Resource Manager templates)
