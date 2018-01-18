@@ -20,47 +20,47 @@ Microsoft Azure-centric solution here!  This is a comprehensive Microsoft Azure-
 * Azure DDoS Protection - yields protection for our Azure resources from denial of service threats
 * Azure Content Delivery Network - scales out appropriate data on localized edge servers
 
-What are we building?  There are really two separate environments that need to be developed:  A backend infrasture tool set and a deliverable (runnable) solution to provide end-user codebase for running an integrated solution.
+What are we building?  There are really two separate environments that need to be developed:  A backend infrastucture tool-set and a deliverable (runnable) solution (that will be deployed to Azure) to provide end-user codebases for running customized integrated solutions.
 
 Here's a broad overview of the proposed solutions and their constituant services:
 
-# Backend Infrastructure
+### Backend Infrastructure
 	A set of tools or apps that configure and manage an Azure infrastructure (Infrastructure as code using Resource Manager templates) -  see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest
 	
-	** setup new accounts
-	** choose desired features
-	** enter provisioning information
-	** generate new GitHub account repository
-	** create any necessary email (SMTP and Pop3) accounts
-	** create any necessary Twilio configurations
-	** create payment gateway acounts (BrainTree, Stripe, etc) and setup any necessary webhooks
-	** create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
+	* setup new accounts
+	* choose desired features
+	* enter provisioning information
+	* generate new GitHub account repository
+	* create any necessary email (SMTP and Pop3) accounts
+	* create any necessary Twilio configurations
+	* create payment gateway acounts (BrainTree, Stripe, etc) and setup any necessary webhooks
+	* create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
 	
-# Deliverable Core Building Blocks-- we need to be able to:
-	** spin up and tear down entire Azure resource groups based on dynamically-created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
+### Deliverable Core Building Blocks-- we need to be able to:
+	* spin up and tear down entire Azure resource groups based on dynamically-created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
 			
-	** create and configure necessary DNS entries and deploy SSL certificates to Azure as necessary for proper operation of services
+	* create and configure necessary DNS entries and deploy SSL certificates to Azure as necessary for proper operation of services
 	
-	** auto-wire up CI/CD deployments for each GitHub repo to prescribed Azure services
+	* auto-wire up CI/CD deployments for each GitHub repo to prescribed Azure services
 	
-	** auto-build an MVC management (per Azure subscription) "front-end Azure management" app specifically for prescribed Azure environment.  Features will include:
-		*** dynamically create/script azure functions code for GitHub repo and via continuous delivery (CD) to Azure
+	* auto-build an MVC management (per Azure subscription) "front-end Azure management" app specifically for prescribed Azure environment.  Features will include:
+		* dynamically create/script azure functions code for GitHub repo and via continuous delivery (CD) to Azure
 	
-		*** deploy MVC management app to Azure prescribed subscription web app
+		* deploy MVC management app to Azure prescribed subscription web app
 		
-		*** provision and pre-load any required data into data stores
+		* provision and pre-load any required data into data stores
 	
-		*** load data from file resources or data transfers from any prescribed data stores
+		* load data from file resources or data transfers from any prescribed data stores
 		
-		*** create and configure CDNs as prescribed (ie: CloudFlare, AWS CloudFront, Azure Content Delivery Network)
+		* create and configure CDNs as prescribed (ie: CloudFlare, AWS CloudFront, Azure Content Delivery Network)
 		
-#  End user deliverable software tools and services for prescribed environments (ie storefront, inventory, personnel, products, etc.)	
+##  End user deliverable software tools and services for prescribed environments (ie storefront, inventory, personnel, products, etc.)	
 
 Performance and discoverability of the web solutions is critical.  To ensure the absolute best speed and SEO abilities of the visible consumer front end solutions, we will utilize the following cutting edge platforms:
 * API Platform https://api-platform.com/	- ensures that SEO is done correctly for search engines
 * GatsbyJS https://www.gatsbyjs.org/ - for front facing consumer web apps to have extremely performant UX that is blazening fast. 
 
-# Things to consider:
+## Things to consider:
 Azure cost money so we need to be able to track the details of whom and what are consuming the resources that are paid for.  For this we need tools that can report and audit all resources and sort the details by account.
 
 	Audit Inventory of Azure Resources:
