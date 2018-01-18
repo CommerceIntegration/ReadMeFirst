@@ -1,5 +1,5 @@
 # Read Me First
-Hello there and welcome.  If your reading this, hopefully your interest is picqued... and if you'll just hang in there a bit, hopefully you'll figure out what were trying to accomplish here.  This set of repositories contain usuable code.  There are links to detailed guidelines and purposes of each Commerce Integration module/micro-service (look for the links in the description area of each repo).   Help in building this solution is welcomed.
+Hello there and welcome.  If your reading this, hopefully your interest is picqued... and if you'll just hang in there a bit, you'll figure out what were trying to accomplish here.  This set of repositories contain usuable code.  There are links to detailed guidelines and purposes of each Commerce Integration module/micro-service (look for the links in the description area of each repo).   Help in building this solution is welcomed.
 
 Microsoft Azure-centric solution here!  This is a comprehensive Microsoft Azure-based tech stack: 
 * Asp.Net MVC/.Net Core - all management applications will be written in C# and will be deployed to run as Azure WebApps.
