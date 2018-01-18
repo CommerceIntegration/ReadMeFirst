@@ -37,7 +37,7 @@ Here's a broad overview of the proposed solutions and their constituant services
 	** create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
 	
 # Deliverable Core Building Blocks-- we need to be able to:
-	** spin up and tear down entire Azure resource sets based on dynamically created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
+	** spin up and tear down entire Azure resource groups based on dynamically-created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
 			
 	** create and configure necessary DNS entries and deploy SSL certificates to Azure as necessary for proper operation of services
 	
