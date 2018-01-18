@@ -25,7 +25,7 @@ What are we building?  There are really two separate environments that need to b
 Here's a broad overview of the proposed solutions and their constituant services:
 
 ### Backend Infrastructure
-A set of tools or apps that configure and manage an Azure infrastructure (Infrastructure as code using Resource Manager templates) -  see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest
+A set of tools or apps that configure and manage an Azure infrastructure (Infrastructure as code using Resource Manager templates)
 	
 * setup new accounts
 * choose desired features
@@ -35,7 +35,9 @@ A set of tools or apps that configure and manage an Azure infrastructure (Infras
 * create any necessary Twilio configurations
 * create payment gateway acounts (BrainTree, Stripe, etc) and setup any necessary webhooks
 * create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
-	
+
+Luckly someone has done this before and has provided an example - see: https://microsoft.github.io/techcasestudies/devops/2017/03/14/risco.html and https://github.com/orizohar/risco-hackfest
+
 ### Deliverable Core Building Blocks-- we need to be able to:
 * spin up and tear down entire Azure resource groups based on dynamically-created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
 			
