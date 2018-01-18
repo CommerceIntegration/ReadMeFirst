@@ -38,13 +38,13 @@ A set of tools or apps that _configure and manage_ an Azure infrastructure (Infr
 * create new Azure subscriptions - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal
 
 ### Deliverable Core Building Blocks-- we need to be able to:
-1 spin up and tear down entire Azure resource groups based on dynamically-created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
+1. spin up and tear down entire Azure resource groups based on dynamically-created ARM Powershell templates - see: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-export-template
 			
-2 create and configure necessary DNS entries and deploy SSL certificates to Azure as necessary for proper operation of services
+2. create and configure necessary DNS entries and deploy SSL certificates to Azure as necessary for proper operation of services
 	
-3 auto-wire up CI/CD deployments for each GitHub repo to prescribed Azure services
+3. auto-wire up CI/CD deployments for each GitHub repo to prescribed Azure services
 	
-4 auto-build an MVC management (per Azure subscription) "front-end Azure management" app specifically for prescribed Azure environment.  Features will include:
+4. auto-build an MVC management (per Azure subscription) "front-end Azure management" app specifically for prescribed Azure environment.  Features will include:
 	* dynamically create/script azure functions code for GitHub repo and via continuous delivery (CD) to Azure
 	
 	* deploy MVC management app to Azure prescribed subscription web app
